@@ -9,7 +9,7 @@ import (
 )
 
 type HTTPServer struct {
-	Addr string `yaml:"address" env-required:"true"`
+	Addr string `yaml:"addr" env-required:"true"`
 }
 
 type Config struct {
@@ -57,7 +57,7 @@ func MustLoad() *Config {
 	return &cfg
 }
 
-//working- Find the configuration file → check that it exists → read it → 
+//working- Find the configuration file → check that it exists → read it →
 // ->convert its values into a Go Config struct → return the configuration.
 
 //contro flow ->
